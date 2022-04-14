@@ -1,0 +1,36 @@
+@font-face {
+    font-family: The-Bash;
+    src: url('../test/TheBashSingingSlashy.otf');
+}
+
+body {
+    height: 100%;
+    background-color: #000000;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+h1 {
+    font-family: 'The-Bash', sans-serif;
+    font-size: 12em;
+    background: linear-gradient(50deg, #870000, #000000);
+    background-size: 1000%;
+    background-clip: 'text';
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
